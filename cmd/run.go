@@ -7,7 +7,7 @@ import (
 
 var runCmd = &cli.Command{
 	Name:  "run",
-	Usage: "run lambda server",
+	Usage: "run example lambda server",
 	Action: func(ctx *cli.Context) error {
 		examples.Run()
 		return nil
