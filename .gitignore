@@ -15,3 +15,6 @@
 # vendor/
 
 dgraph-lambda-go
+graph
+gqlgen.yml
+server.go
