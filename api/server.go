@@ -11,7 +11,7 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 	"github.com/hasura/go-graphql-client"
-	"github.com/schartey/dgraph-lambda-go/resolver"
+	"github.com/Phill240/dgraph-lambda-go/resolver"
 	"google.golang.org/grpc"
 )
 
