@@ -22,7 +22,7 @@ func RunServer(setupResolver func(r *resolver.Resolver, gql *graphql.Client, dql
 	gql := graphql.NewClient(dgraphqlUrl+"/graphql", nil)
 
 	/* Setup DQL-Client */
-	conn, err := grpc.Dial(dqlUrl, grpc.WithInsecure())
+	conn, err := grpc.Dial(dqlUrl, grpc.WithInsecure(), WithDefaultCallOptions(MaxCallRecvMsgSize(100*1000*1000)))
 	if err != nil {
 		fmt.Println(err)
 		return err
