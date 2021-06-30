@@ -1,4 +1,4 @@
-module github.com/schartey/dgraph-lambda-go
+module github.com/Phill240/dgraph-lambda-go
 
 go 1.16
 
